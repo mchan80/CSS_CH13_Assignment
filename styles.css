@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: Nunito, sans-serif;
+  font-size: 20px;
+}
+
+nav {
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 75px;
+  font-size: 25px;
+  background-color: rgb(249, 240, 229);
+}
+
+li {
+  display: inline;
+  margin: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-family: Montserrat, sans-serif;
+  font-size: 50px;
+  color: rgb(53, 112, 71);
+  text-align: center;
+  padding: 20px;
+  border-top: 5px solid rgb(53, 112, 71);
+  border-bottom: 5px solid rgb(53, 112, 71);
+  border-radius: 10px;
+  margin: 5% 20%;
+  margin-bottom: 5%;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+.profilePic {
+  width: 600px;
+  height: 600px;
+  display: block;
+  margin: auto;
+  box-shadow: 5px 5px 5px 5px #777777;
+}
+
+div.codeList {
+  width: 400px;
+  height: 400px;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px 60px;
+  margin-top: 5%;
+  margin-bottom: 20px;
+  background-color: rgb(249, 240, 229);
+}
+
+p.codeList {
+  font-size: 20px;
+  text-align: center;
+}
+
+ul.codeList {
+  list-style-type: none;
+  text-indent: -4rem;
+}
+
+li.codeList {
+  display: block;
+  margin: 0;
+}
+
+div.aboutMe {
+  background-color: rgb(103, 181, 126);
+  color: #e5e5e5;
+  text-shadow: 2px 2px 4px #000;
+  padding: 20px 40px;
+}
+
+h1.aboutMe {
+  text-shadow: none;
+}
+
+address {
+  font-style: normal;
+}
+
+a:link {
+  color: rgb(103, 181, 126);
+  text-decoration: none;
+}
+a:visited {
+  color: rgb(53, 112, 71);
+}
+a:hover {
+  color: pink;
+  text-decoration: underline;
+}
+a:active {
+  color: rgb(218, 125, 141);
+}
+
+input,
+button {
+  font-family: Nunito, sans-serif;
+  font-size: 2rem;
+}
+
+input.email {
+  border: 1px solid rgb(103, 181, 126);
+  border-radius: 2px;
+  padding: 2px;
+}
+input.email:focus {
+  outline: 2px solid rgb(218, 125, 141);
+}
+
+button.join {
+  background-color: rgb(103, 181, 126);
+  border: none;
+  border-radius: 2px;
+  padding: 2px 4px;
+}
+button.join:hover {
+  background-color: pink;
+}
+button.join:active {
+  background-color: rgb(218, 125, 141);
+}
+
+/* *****************************This is for iPads***************************** */
+
+@media (min-width: 481px) and (max-width: 768px) {
+  body {
+    font-size: 15px;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  h2,
+  nav {
+    font-size: 20px;
+  }
+
+  .profilePic {
+    width: 400px;
+    height: 400px;
+  }
+
+  div.codeList {
+    width: 350px;
+    height: 350px;
+  }
+
+  p.codeList {
+    font-size: 15px;
+  }
+
+  input,
+  button {
+    font-size: 1.5rem;
+  }
+}
+
+/* *****************************This is for mobile***************************** */
+
+@media (max-width: 480px) {
+  body {
+    font-size: 12px;
+  }
+
+  h1 {
+    font-size: 25px;
+  }
+
+  h2,
+  nav {
+    font-size: 16px;
+  }
+
+  .profilePic {
+    width: 250px;
+    height: 250px;
+  }
+
+  div.codeList {
+    width: 275px;
+    height: 275px;
+  }
+
+  p.codeList {
+    font-size: 12px;
+  }
+
+  input,
+  button {
+    font-size: 1.2rem;
+  }
+}
